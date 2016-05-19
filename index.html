@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <title>Impresos La Paz</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/title.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link href='http://impresoslapaz.com.mx/favicon.ico' rel='icon' type='image/x-icon'/>
+    <script type="text/javascript" src="js/modernizr.foundation.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/foundation.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.shuffleLetters.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function(){
+            $('#slider').orbit({ fluid: '16x6' });
+            $("#oneModal").click(function() {
+                $("#modalOne").reveal();
+            });
+            $("#closeOne").click( function() {
+                $('#modalOne').trigger('reveal:close');
+            });
+            $("#twoModal").click(function() {
+                $("#modalTwo").reveal();
+            });
+            $("#closeTwo").click( function() {
+                $('#modalTwo').trigger('reveal:close');
+            });
+            $("#threeModal").click(function() {
+                $("#modalThree").reveal();
+            });
+            $("#closeThree").click( function() {
+                $('#modalThree').trigger('reveal:close');
+            });
+            $("#openModalMap").click(function() {
+                $("#modalMap").reveal();
+            });
+            $("#closeModalMap").click( function() {
+                $('#modalMap').trigger('reveal:close');
+            });
+        });
+    </script>
+    <noscript>
+        <style>
+            .es-carousel ul{
+                display:block;
+            }
+        </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+        <div class="rg-image-wrapper">
+            {{if itemsCount > 1}}
+            <div class="rg-image-nav">
+                <a href="#" class="rg-image-nav-prev">Previous Image</a>
+                <a href="#" class="rg-image-nav-next">Next Image</a>
+            </div>
+            {{/if}}
+            <div class="rg-image"></div>
+            <div class="rg-loading"></div>
+            <div class="rg-caption-wrapper">
+                <div class="rg-caption" style="display:none;">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </script>
+</head>
+<body>
+    <div id="page" class="row">
+    <div class="row">
+        <div class="twelve columns">
+            <div id="container">Impresos La Paz S.A de C.V</div>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="twelve columns">
+            <div id="slider">
+                <img src="images/title/paz1.jpg" />
+                <img src="images/title/paz2.png" />
+                <img src="images/title/paz3.png" />
+                <img src="images/title/paz4.png" />
+                <img src="images/title/paz5.png" />
+            </div>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="four columns">
+            <img src="images/menu/group.png" class="paraImagen"/>
+            <h4>¿Quienes somos?</h4>
+            <p>Somos una Empresa fundada hace más de 15 años, con capital y material humano.....</p>
+            <a class="radius button" href="#" id="oneModal">Leer mas</a>
+        </div>
+
+        <div class="four columns">
+            <img src="images/menu/print.png" class="paraImagen"/>
+            <h4>Nuestros Servicios</h4>
+            <p>Contamos con servicios de impresión tradicional....</p>
+            <a class="radius button" href="#" id="twoModal">Leer mas</a>
+        </div>
+
+        <div class="four columns">
+            <img src="images/menu/folltet.png" class="paraImagen"/>
+            <h4>Catálogo</h4>
+            <p>Aqui le mostramos algo de lo que podra encontrar en nuestra empresa.</p>
+            <a class="radius button" href="#" id="threeModal">Ver Catálogo</a>
+        </div>
+
+    </div>
+
+    <div id="modalOne" class="reveal-modal small">
+        <h2>Impresos La Paz</h2>
+        <hr/>
+        <p class="lead">Somos una Empresa fundada hace 15 años.</p>
+        <p>Con capital y material humano de extracción mexicana 100%.
+            Con bases y principios de servicio al medio de las Artes Gráficas en general.
+            Las necesidades de personal para nuestra empresa ven generados desde intendencia, ayudantes generales,
+            vendedores, compradores, prensistas offset para maquinas de uno y dos colores, así como operadores
+            de maquinas de acabado (dobladoras, engrapadoras y cortadoras), Etc.</p>
+        <a class="close-reveal-modal">&#215;</a>
+        <hr/>
+        <a class="secondary button" href="#" id="closeOne">Cerrar</a>
+    </div>
+
+    <div id="modalTwo" class="reveal-modal small">
+        <h2>Servicios</h2>
+        <hr/>
+        <p>Contamos con servicios de impresión tradicional.</p>
+            <ul class="disc">
+                <li>Prensa plana de 1 y 2 colores en tamaño desde 1/2 carta y hasta 60 x 90 cm.</li>
+                <li>Impresiones Digitales</li>
+                <li>Servicio de maquila en libros de cualquier dimensión</li>
+                <li>Impresion sobre papel, textil y materiales diversos</li>
+            </ul>
+            <p>Estamos al servicio de las necesidades de Empresas y oficinas, así como para publicidad e imagen corporativa</p>
+        <a class="close-reveal-modal">&#215;</a>
+        <hr/>
+        <a class="secondary button" href="#" id="closeTwo">Cerrar</a>
+    </div>
+
+    <div id="modalThree" class="reveal-modal large">
+        <h2>Catálogo</h2>
+        <hr/>
+        <p class="lead">Estos son algunos de nuestros articulos.</p>
+
+        <div id="rg-gallery" class="rg-gallery">
+            <div class="es-carousel-wrapper">
+                <div class="es-carousel">
+                    <ul>
+                        <li><a href="#"><img data-large="images/follets/0.jpg" alt="image00"  /></a></li>
+                        <li><a href="#"><img data-large="images/follets/1.png" alt="image01"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/2.jpg" alt="image02"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/3.jpg" alt="image03"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/5.jpg" alt="image05"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/6.jpg" alt="image06"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/7.jpg" alt="image07"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/8.jpg" alt="image08"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/9.jpg" alt="image08"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/10.jpg" alt="image10"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/11.jpg" alt="image11"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/12.jpg" alt="image12"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/13.jpg" alt="image13"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/14.jpg" alt="image14"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/15.jpg" alt="image15"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/16.jpg" alt="image16"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/17.jpg" alt="image17"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/18.jpg" alt="image18"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/19.jpg" alt="image19"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/20.jpg" alt="image20"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/21.jpg" alt="image21"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/22.jpg" alt="image22"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/23.jpg" alt="image23"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/24.jpg" alt="image24"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/25.jpg" alt="image25"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/26.jpg" alt="image26"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/27.jpg" alt="image27"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/28.jpg" alt="image28"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/29.jpg" alt="image29"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/30.jpg" alt="image30"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/31.jpg" alt="image31"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/32.jpg" alt="image33"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/33.jpg" alt="image33"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/34.jpg" alt="image34"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/35.jpg" alt="image35"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/36.jpg" alt="image36"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/37.jpg" alt="image37"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/38.jpg" alt="image38"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/39.jpg" alt="image39"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/40.jpg" alt="image40"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/41.jpg" alt="image41"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/42.jpg" alt="image42"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/43.jpg" alt="image43"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/44.jpg" alt="image44"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/45.jpg" alt="image45"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/46.jpg" alt="image46"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/47.jpg" alt="image47"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/48.jpg" alt="image48"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/49.jpg" alt="image49"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/50.jpg" alt="image50"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/51.jpg" alt="image51"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/52.jpg" alt="image52"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/53.jpg" alt="image53"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/54.jpg" alt="image54"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/55.jpg" alt="image55"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/56.jpg" alt="image56"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/57.jpg" alt="image57"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/58.jpg" alt="image58"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/59.jpg" alt="image59"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/60.jpg" alt="image60"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/61.jpg" alt="image61"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/62.jpg" alt="image62"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/63.jpg" alt="image63"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/64.jpg" alt="image64"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/65.jpg" alt="image65"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/66.jpg" alt="image66"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/67.jpg" alt="image67"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/68.jpg" alt="image68"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/69.jpg" alt="image69"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/70.jpg" alt="image70"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/71.jpg" alt="image71"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/72.jpg" alt="image72"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/73.jpg" alt="image73"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/74.jpg" alt="image74"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/75.jpg" alt="image75"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/76.jpg" alt="image76"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/77.jpg" alt="image77"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/78.jpg" alt="image78"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/79.jpg" alt="image79"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/80.jpg" alt="image80"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/81.jpg" alt="image81"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/82.jpg" alt="image82"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/83.jpg" alt="image83"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/84.jpg" alt="image84"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/85.jpg" alt="image85"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/86.jpg" alt="image86"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/87.jpg" alt="image87"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/88.jpg" alt="image88"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/89.jpg" alt="image89"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/90.jpg" alt="image90"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/91.jpg" alt="image91"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/92.jpg" alt="image92"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/93.jpg" alt="image93"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/94.jpg" alt="image94"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/95.jpg" alt="image95"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/96.jpg" alt="image96"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/97.jpg" alt="image97"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/98.jpg" alt="image98"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/99.jpg" alt="image99"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/100.jpg" alt="image100"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/101.jpg" alt="image101"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/102.jpg" alt="image102"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/103.jpg" alt="image103"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/104.jpg" alt="image104"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/106.jpg" alt="image106"   /></a></li>
+                        <li><a href="#"><img data-large="images/follets/107.jpg" alt="image107"   /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+        <hr/>
+        <a class="secondary button" href="#" id="closeThree">Cerrar</a>
+    </div>
+
+    <div id="modalMap" class="reveal-modal medium">
+        <h2>Ubicación</h2>
+        <hr/>
+        <h5>Esta es nuestra dirección.</h5>
+        <p>Calle: Eligio Ancona No.113
+            Col.Santa María la Ribera</p>
+        <p>C.P. 06400 México, D.F</p>
+        <h5>Telefonos.</h5>
+        <p>55476594 - 55470609</p>
+        <h5>Correo Electronico.</h5>
+        <p>impresos.sa@prodigy.net.mx - irpaz.sa@prodigy.net.mx</p>
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Eligi%C3%B3+Ancona+113,+Santa+Mar%C3%ADa+La+Ribera,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+D.F.,+Mexico&amp;aq=&amp;sll=19.452549,-99.157794&amp;sspn=0.002289,0.004699&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Eligi%C3%B3+Ancona+113,+Santa+Mar%C3%ADa+La+Ribera,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+D.F.,+Mexico&amp;ll=19.452521,-99.156538&amp;spn=0.004578,0.009398&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Eligi%C3%B3+Ancona+113,+Santa+Mar%C3%ADa+La+Ribera,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+D.F.,+Mexico&amp;aq=&amp;sll=19.452549,-99.157794&amp;sspn=0.002289,0.004699&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Eligi%C3%B3+Ancona+113,+Santa+Mar%C3%ADa+La+Ribera,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+D.F.,+Mexico&amp;ll=19.452521,-99.156538&amp;spn=0.004578,0.009398&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        <a class="close-reveal-modal">&#215;</a>
+        <hr/>
+        <a class="secondary button" href="#" id="closeModalMap">Cerrar</a>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <div class="twelve columns">
+
+            <div class="panel">
+                <h4>Contáctanos</h4>
+
+                <div class="row">
+                    <div class="nine columns">
+                        <p>Puedes contactarnos por correo electrónico o en nuestra tienda física</p>
+                    </div>
+                    <div class="nine columns">
+                        <a href="#" id="openModalMap" class="radius button right">Ubicación</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="row">
+        <div class="twelve columns">
+            <hr />
+            <div class="row">
+                <div class="twelve columns">
+                    <p>&copy; Impresos La Paz, S.A de C.V - Desing By. <a href="https://twitter.com/JhonFx_">@jhonfx_</a> | Utiliza navegadores <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a> o <a href="http://www.mozilla.org/en-US/firefox/new/?utm_expid=65789850-8&utm_referrer=https%3A%2F%2Fwww.google.com.mx%2F">Firefox</a> para una mejor visualización.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+</body>
+</html>
